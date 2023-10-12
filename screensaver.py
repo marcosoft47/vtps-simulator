@@ -63,9 +63,7 @@ def resource_path(relative_path):
     return os.path.join(base_path, relative_path)
 
 def tocar_som():
-    pygame.mixer.find_channel(force=True).play(audio)        
-    #pygame.mixer.fadeout(5000)
-
+    pygame.mixer.find_channel(force=True).play(audio)
 
 
 
