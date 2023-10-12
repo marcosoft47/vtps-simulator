@@ -77,13 +77,13 @@ speed = 5
 surface = pygame.display.set_mode((largura, altura), pygame.RESIZABLE)
 pygame.display.set_caption('ricardofm.me')
 
-audio = pygame.mixer.Sound(resource_path('ratinho.ogg'))
-pygame.mixer.music.load(resource_path('ratinho.ogg'))
+audio = pygame.mixer.Sound('ratinho.ogg')
+pygame.mixer.music.load('ratinho.ogg')
 tamanho = audio.get_length()
 qntchannels = 1
 
-ricardo = pygame.transform.scale(pygame.image.load(resource_path('imagens/ricardo.jpeg')).convert(), (400,400))
-feliz = pygame.transform.scale(pygame.image.load(resource_path('imagens/feliz.jpeg')).convert(), (400,400))
+ricardo = pygame.transform.scale(pygame.image.load('imagens/ricardo.jpeg').convert(), (400,400))
+feliz = pygame.transform.scale(pygame.image.load('imagens/feliz.jpeg').convert(), (400,400))
 relogio = pygame.time.Clock()
 fm = [Ricardo()]
 
